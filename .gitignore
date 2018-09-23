@@ -10,6 +10,7 @@ bin/
 build/
 deploy/
 target/
+tmp/
 *.class
 
 # The 3rd party dependencies should never be committed
