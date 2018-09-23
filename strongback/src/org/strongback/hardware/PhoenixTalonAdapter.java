@@ -206,16 +206,18 @@ public class PhoenixTalonAdapter implements LegacyCANTalon {
     @Override
     public void setReverseSoftLimit(double limit) {
 
+
     }
 
     @Override
     public void enableForwardSoftLimit(boolean enable) {
+        impl.configForwardSoftLimitEnable(enable);
 
     }
 
     @Override
     public void enableReverseSoftLimit(boolean enable) {
-
+        impl.configReverseSoftLimitEnable( enable );
     }
 
     @Override
@@ -225,7 +227,7 @@ public class PhoenixTalonAdapter implements LegacyCANTalon {
 
     @Override
     public void enableBrakeMode(boolean brake) {
-
+        impl.setNeutralMode(NeutralMode.Brake);
     }
 
     @Override
@@ -273,9 +275,39 @@ public class PhoenixTalonAdapter implements LegacyCANTalon {
         return false;
     }
 
+    private FeedbackDevice feedbackDevice(ITalonSRX.FeedbackDevice device) {
+        switch (device){
+            case PULSE_WIDTH:
+                return FeedbackDevice.PulseWidthEncodedPosition;
+
+
+            case QUADRATURE_ENCODER :
+                return FeedbackDevice.QuadEncoder;
+
+            case  ANALOG_POTENTIOMETER:
+                return FeedbackDevice.Analog;
+            case ANALOG_ENCODER:
+                return FeedbackDevice.Analog;
+            case ENCODER_RISING:
+                return  FeedbackDevice.SensorDifference;
+            case ENCODER_FALLING:
+                return FeedbackDevice.SensorDifference;
+            case MAGNETIC_ENCODER_RELATIVE:
+                return FeedbackDevice.CTRE_MagEncoder_Relative;
+            case MAGNETIC_ENCODER_ABSOLUTE:
+                return FeedbackDevice.CTRE_MagEncoder_Absolute;
+           
+
+                default:
+                return FeedbackDevice.Analog;
+
+        }
+
+    }
+
     @Override
     public void setFeedbackDevice(ITalonSRX.FeedbackDevice device) {
-
+        impl.configSelectedFeedbackSensor(feedbackDevice(device));
     }
 
     @Override

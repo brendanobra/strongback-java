@@ -4,7 +4,7 @@
 # Some Eclipse project resource files should never be checked in ...
 .recommenders/
 .settings/
-
+.idea/
 # These are names of directories typically used for generated content, so are ignored ...
 bin/
 build/
@@ -17,7 +17,9 @@ libs/wpilib
 libs/ctre
 libs/navx-mxp
 libs/test
+libs/ant
 downloads/
+*not*/*
 
 .DS_Store/
 
