@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.strongback</groupId>
+    <artifactId>strongback</artifactId>
+    <version>2018.1.0</version>
+    <parent>
+        <groupId>org.strongback</groupId>
+        <artifactId>strongback-java</artifactId>
+        <version>2018.1.0</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <packaging>jar</packaging>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>edu.wpi.first.cscore</groupId>
+            <artifactId>cscore-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.wpilibj</groupId>
+            <artifactId>wpilibj-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ctre</groupId>
+            <artifactId>phoenix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.ntcore</groupId>
+            <artifactId>ntcore-java</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
