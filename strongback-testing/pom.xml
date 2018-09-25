@@ -2,7 +2,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.strongback</groupId>
-    <artifactId>strongback</artifactId>
+    <artifactId>strongback-testing</artifactId>
     <version>2018.1.0</version>
     <parent>
         <groupId>org.strongback</groupId>
@@ -13,7 +13,6 @@
     <packaging>jar</packaging>
     <build>
         <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory></testSourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -40,6 +39,25 @@
         <dependency>
             <groupId>edu.wpi.first.ntcore</groupId>
             <artifactId>ntcore-java</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core -->
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.strongback</groupId>
+            <artifactId>strongback</artifactId>
+            <version>2018.1.0</version>
         </dependency>
 
     </dependencies>

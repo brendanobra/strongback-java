@@ -39,6 +39,8 @@
     </dependencyManagement>
     <modules>
         <module>strongback</module>
+        <module>strongback-testing</module>
+        <module>strongback-tests</module>
     </modules>
 
 </project>
