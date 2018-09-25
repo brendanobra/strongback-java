@@ -1,5 +1,5 @@
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/strongback/strongback-cli/blob/master/LICENSE.txt)
-[![Build Status](https://travis-ci.org/strongback/strongback-java.svg?branch=master)](https://travis-ci.org/strongback/strongback-java)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/brendan/strongback-cli/blob/master/LICENSE.txt)
+[![Build Status](https://travis-ci.org/brendanobra/strongback-java.svg?branch=develop)](https://travis-ci.org/strongback/strongback-java)
 [![User chat](https://img.shields.io/badge/chat-users-brightgreen.svg)](https://gitter.im/strongback/users)
 [![Developer chat](https://img.shields.io/badge/chat-devs-brightgreen.svg)](https://gitter.im/strongback/dev)
 [![Google Group](https://img.shields.io/:mailing%20list-strongback-brightgreen.svg)](https://groups.google.com/forum/#!forum/strongback)
