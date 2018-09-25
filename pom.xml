@@ -17,13 +17,31 @@
             <dependency>
                 <groupId>edu.wpi.first.cscore</groupId>
                 <artifactId>cscore-java</artifactId>
-                <version>2018.4.1-20180921151738-1194-gf89274f</version>
+                <version>RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>edu.wpi.first.wpilibj</groupId>
                 <artifactId>wpilibj-java</artifactId>
-                <version>2018.4.1-20180921151738-1194-gf89274f</version>
+                <version>RELEASE</version>
             </dependency>
+
+            <dependency>
+                <groupId>edu.wpi.first.wpiutil</groupId>
+                <artifactId>wpiutil-java</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.wpi.first.halsim</groupId>
+                <artifactId>halsim-print</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>edu.wpi.first.hal</groupId>
+                <artifactId>hal-java</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.ctre</groupId>
                 <artifactId>phoenix</artifactId>
@@ -32,7 +50,7 @@
             <dependency>
                 <groupId>edu.wpi.first.ntcore</groupId>
                 <artifactId>ntcore-java</artifactId>
-                <version>2018.4.1-20180923204725-1195-g5c6b78e</version>
+                <version>RELEASE</version>
             </dependency>
 
         </dependencies>
