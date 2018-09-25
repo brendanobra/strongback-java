@@ -33,6 +33,14 @@
             <artifactId>wpilibj-java</artifactId>
         </dependency>
         <dependency>
+            <groupId>edu.wpi.first.hal</groupId>
+            <artifactId>hal-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.wpiutil</groupId>
+            <artifactId>wpiutil-java</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.ctre</groupId>
             <artifactId>phoenix</artifactId>
         </dependency>

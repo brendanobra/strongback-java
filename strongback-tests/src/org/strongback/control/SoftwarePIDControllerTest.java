@@ -17,6 +17,7 @@
 package org.strongback.control;
 
 import static org.fest.assertions.Assertions.assertThat;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Before;
 import org.junit.Test;
