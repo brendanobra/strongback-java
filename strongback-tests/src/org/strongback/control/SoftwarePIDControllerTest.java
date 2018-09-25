@@ -224,7 +224,7 @@ public class SoftwarePIDControllerTest {
 
     @Test
     public void shouldUseProportionalDistanceOnlyWPILib() throws InterruptedException {
-        TestableRobotState.resetMatchTime();
+        //TestableRobotState.resetMatchTime();
         model = simple(SourceType.DISTANCE);
         // model.print = true;
         model.setValue(0.30);
@@ -241,7 +241,7 @@ public class SoftwarePIDControllerTest {
 
     @Test
     public void shouldUseProportionalRateOnlyWPILib() throws InterruptedException {
-        TestableRobotState.resetMatchTime();
+        //TestableRobotState.resetMatchTime();
         model = simple(SourceType.RATE);
         // model.print = true;
         model.setValue(0.30);
