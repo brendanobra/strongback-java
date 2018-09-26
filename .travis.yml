@@ -1,14 +1,15 @@
 sudo: false
 language: java
 before_install:
-  - ant -version
-  - wget http://www-us.apache.org/dist//ant/binaries/apache-ant-1.10.5-bin.tar.gz
-  - tar -xf apache-ant-1.10.5-bin.tar.gz
-  - export ANT_HOME=$PWD/apache-ant-1.10.5
-  - export PATH=$ANT_HOME/bin:$PATH
-  - ant -version
+  # - ant -version
+#  - wget http://www-us.apache.org/dist//ant/binaries/apache-ant-1.10.5-bin.tar.gz
+  - wget http://apache.mirrors.lucidnetworks.net/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+  - tar -xf apache-maven-3.5.4-bin.tar.gz
+  - export MAVEN_HOME=$PWD/apache-maven-3.5.4-bin.tar.gz
+  - export PATH=$MAVEN_HOME/bin:$PATH
+  - mvn -version
 
-install: ant deps
-script: ant test
+#install: ant deps
+script: mvn clean install
 jdk:
   - oraclejdk8
