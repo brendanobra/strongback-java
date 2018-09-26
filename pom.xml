@@ -46,6 +46,9 @@
                 <groupId>com.ctre</groupId>
                 <artifactId>phoenix</artifactId>
                 <version>5.8.1.0</version>
+                <!-- Not cool, but needed for now -->
+                <scope>system</scope>
+                <systemPath>${project.basedir}/../persistent_libs/ctre/CTRE_Phoenix.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>edu.wpi.first.ntcore</groupId>
