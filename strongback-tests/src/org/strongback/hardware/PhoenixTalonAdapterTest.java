@@ -1,15 +1,31 @@
 package org.strongback.hardware;
 
 import static org.junit.Assert.*;
+import com.ctre.phoenix.motorcontrol.can.*;
+import com.ctre.phoenix.motorcontrol.*;
+import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.*;
+import static org.junit.Assert.*;
 
 public class PhoenixTalonAdapterTest {
+    TalonSRX talon = mock(com.ctre.phoenix.motorcontrol.can.TalonSRX.class);
+    SensorCollection sensorCollection = mock(SensorCollection.class);
+    PhoenixTalonAdapter underTest = new PhoenixTalonAdapter(talon);
+
+    @org.junit.Before
+    public void setup() {
+        when(talon.getSensorCollection()).thenReturn(sensorCollection);
+    }
 
     @org.junit.Test
     public void isFwdLimitSwitchClosed() {
+        when(sensorCollection.isFwdLimitSwitchClosed()).thenReturn(true);
+        assert (underTest.isFwdLimitSwitchClosed());
     }
 
     @org.junit.Test
     public void isRevLimitSwitchClosed() {
+        
     }
 
     @org.junit.Test
