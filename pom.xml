@@ -11,6 +11,11 @@
             <url>http://first.wpi.edu/FRC/roborio/maven/development</url>
         </repository>
     </repositories>
+    <properties>
+        <powermock.version>1.7.1</powermock.version>
+        <powermock.api.version>1.7.4</powermock.api.version>
+        <mockito.version>2.22.0</mockito.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -54,6 +59,18 @@
                 <groupId>edu.wpi.first.ntcore</groupId>
                 <artifactId>ntcore-java</artifactId>
                 <version>RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-junit4</artifactId>
+                <version>${powermock.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-api-mockito2</artifactId>
+                <version>${powermock.version}</version>
+                <scope>test</scope>
             </dependency>
 
         </dependencies>
