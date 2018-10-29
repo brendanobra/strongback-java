@@ -25,12 +25,14 @@ public class PhoenixTalonAdapterTest {
 
     @org.junit.Test
     public void isRevLimitSwitchClosed() {
-        assert (false);
+        when(sensorCollection.isRevLimitSwitchClosed()).thenReturn(true);
+        assert (underTest.isRevLimitSwitchClosed());
     }
 
     @org.junit.Test
     public void getDeviceID() {
-        assert (false);
+        when(talon.getDeviceID()).thenReturn(123);
+        assert (underTest.getDeviceID() == 123);
     }
 
     @org.junit.Test
