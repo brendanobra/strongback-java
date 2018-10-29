@@ -3,19 +3,45 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.strongback</groupId>
     <artifactId>strongback-java</artifactId>
-    <version>2018.1.0</version>
+    <version>2018.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>team5496</id>
+            <url>s3://team5496/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>team5496</id>
+            <url>s3://team5496/releases</url>
+        </repository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>wpi</id>
             <url>http://first.wpi.edu/FRC/roborio/maven/development</url>
         </repository>
+        <repository>
+            <id>team5496</id>
+            <url>s3://team5496/releases</url>
+        </repository>
     </repositories>
+
     <properties>
         <powermock.version>1.7.1</powermock.version>
         <powermock.api.version>1.7.4</powermock.api.version>
         <mockito.version>2.22.0</mockito.version>
     </properties>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
+    </build>
 
     <dependencyManagement>
         <dependencies>

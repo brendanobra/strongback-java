@@ -3,11 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.strongback</groupId>
     <artifactId>strongback-testing</artifactId>
-    <version>2018.1.0</version>
     <parent>
         <groupId>org.strongback</groupId>
         <artifactId>strongback-java</artifactId>
-        <version>2018.1.0</version>
+        <version>2018.1.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
     <packaging>jar</packaging>
@@ -48,12 +47,16 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.dropwizard.metrics/metrics-core -->
+        <!--<dependency>-->
+            <!--<groupId>io.dropwizard.metrics</groupId>-->
+            <!--<artifactId>metrics-core</artifactId>-->
+            <!--<version>4.0.3</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>io.dropwizard.metrics</groupId>
+            <groupId>com.codahale.metrics</groupId>
             <artifactId>metrics-core</artifactId>
-            <version>4.0.3</version>
+            <version>3.0.2</version>
         </dependency>
-
         <dependency>
             <groupId>org.strongback</groupId>
             <artifactId>strongback</artifactId>

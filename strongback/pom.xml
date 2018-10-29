@@ -3,11 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.strongback</groupId>
     <artifactId>strongback</artifactId>
-    <version>2018.1.0</version>
     <parent>
         <groupId>org.strongback</groupId>
         <artifactId>strongback-java</artifactId>
-        <version>2018.1.0</version>
+        <version>2018.1.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
     <packaging>jar</packaging>
