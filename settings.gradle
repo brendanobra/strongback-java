@@ -1,0 +1,8 @@
+rootProject.name = 'strongback-java'
+include ':strongback'
+include ':strongback-testing'
+include ':strongback-tests'
+
+project(':strongback').projectDir = "$rootDir/strongback" as File
+project(':strongback-testing').projectDir = "$rootDir/strongback-testing" as File
+project(':strongback-tests').projectDir = "$rootDir/strongback-tests" as File

@@ -1,0 +1,47 @@
+plugins {
+    // ... other plugins ...
+    //id "edu.wpi.first.GradleRIO" version "2019.0.0-alpha-3"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceSets {
+    main {
+         java {
+              srcDir 'src'
+              }
+         }
+    test {
+         java {
+              srcDir 'test'
+              }
+         }
+}
+
+
+allprojects  {
+  apply plugin: 'java'
+
+  group = 'org.strongback'
+version = '2018.1.0-SNAPSHOT'
+}
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.5
+  targetCompatibility = 1.5
+
+  
+  repositories {
+    mavenLocal()
+    
+    maven { url "http://first.wpi.edu/FRC/roborio/maven/development" }
+    maven { url "s3://team5496/releases" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
+  
+  
+  
+}
